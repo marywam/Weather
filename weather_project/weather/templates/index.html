@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <table border="1">
+        <tr>
+            <th>City</th>
+            <th>Temperature</th>
+            <th>Description</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for data in weather_data %}
+        <tr>
+            <td>{{ data.city }}</td>
+            <td>{{ data.temperature }}°C</td>
+            <td>{{ data.description }}</td>
+            <td>{{ data.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
